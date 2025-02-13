@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Valentine's Day, Grace!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./global.css">
+    <link rel="preload" href="assets/Pacifico-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  </head>
+  <body class="wordle">
+    <div class="transition-screen"></div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+            <div class="row">
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+                <div class="unit"></div>
+            </div>
+        </div>
+        <img id="doggy" src="./assets/doggy.gif" />
+        <img id="treat" src="./assets/treat.png" />
+        <div class="bubble-container">
+            <img id="bubble" src="./assets/speech_bubble.png" />
+            <p id="fed">
+                Delicious! <span>Wuff!</span> I want more, please! Here's another Wordle...
+            </p>
+            <p id="oops">
+                Oops! <span>Wuff!</span> We'll just forget that happened...
+            </p>
+            <p id="final">
+                Yum! <span>Wuff!</span> There's one more Wordle! Ready?
+            </p>
+        </div>
+    </div>
+
+    <div class="keyboard">
+        <div class="row">
+            <button id="q" class="key" onclick="addCharacter('q')">Q</button>
+            <button id="w" class="key" onclick="addCharacter('w')">W</button>
+            <button id="e" class="key" onclick="addCharacter('e')">E</button>
+            <button id="r" class="key" onclick="addCharacter('r')">R</button>
+            <button id="t" class="key" onclick="addCharacter('t')">T</button>
+            <button id="y" class="key" onclick="addCharacter('y')">Y</button>
+            <button id="u" class="key" onclick="addCharacter('u')">U</button>
+            <button id="i" class="key" onclick="addCharacter('i')">I</button>
+            <button id="o" class="key" onclick="addCharacter('o')">O</button>
+            <button id="p" class="key" onclick="addCharacter('p')">P</button>
+        </div>
+        <div class="row">
+            <button id="a" class="key" onclick="addCharacter('a')">A</button>
+            <button id="s" class="key" onclick="addCharacter('s')">S</button>
+            <button id="d" class="key" onclick="addCharacter('d')">D</button>
+            <button id="f" class="key" onclick="addCharacter('f')">F</button>
+            <button id="g" class="key" onclick="addCharacter('g')">G</button>
+            <button id="h" class="key" onclick="addCharacter('h')">H</button>
+            <button id="j" class="key" onclick="addCharacter('j')">J</button>
+            <button id="k" class="key" onclick="addCharacter('k')">K</button>
+            <button id="l" class="key" onclick="addCharacter('l')">L</button>
+        </div>
+        <div class="row">
+            <button id="guess-btn" class="big-key" onclick="guess()">Enter</button>
+            <button id="z" class="key" onclick="addCharacter('z')">Z</button>
+            <button id="x" class="key" onclick="addCharacter('x')">X</button>
+            <button id="c" class="key" onclick="addCharacter('c')">C</button>
+            <button id="v" class="key" onclick="addCharacter('v')">V</button>
+            <button id="b" class="key" onclick="addCharacter('b')">B</button>
+            <button id="n" class="key" onclick="addCharacter('n')">N</button>
+            <button id="m" class="key" onclick="addCharacter('m')">M</button>
+            <button id="back-btn" class="big-key" onclick="deleteCharacter()">Back</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        transitionOut();
+    </script>
+  </body>
+</html>

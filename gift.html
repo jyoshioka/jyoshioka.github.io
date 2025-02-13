@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Valentine's Day, Grace!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./global.css">
+    <link rel="preload" href="assets/Pacifico-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link rel="preload" href="assets/Pixelify.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  </head>
+  <body id="gift">
+    <div class="transition-screen"></div>
+
+    <button class="continue-btn" onclick="sendGift()">→</button>
+
+    <div class="bubble-container">
+      <img id="bubble" src="./assets/speech_bubble.png" />
+      <p id="thankyou">
+        <span>Wuff!</span> Thank you, Grace! Those treats were so delicious! And I was right, you are super smart! <span>Wuff!</span> 
+        As a token of my appreciation, I have a treat for you! <span>Wuff!</span>
+      </p>
+      <p id="checkbox">
+        Success! <span>Wuff!</span> Check the glove box for a little treat. Thank you again, Grace! I <span>WUFF</span> YOU!
+      </p>
+    </div>
+
+    <img id="doggy" src="./assets/doggy.gif" />
+    <img id="gift" src="./assets/gift.png" />
+
+    <script src="./main.js"></script>
+    <script>
+        transitionOut();
+        introGift();
+    </script>
+  </body>
+</html>

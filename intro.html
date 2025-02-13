@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Valentine's Day, Grace!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./global.css">
+    <link rel="preload" href="assets/Pacifico-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link rel="preload" href="assets/Pixelify.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  </head>
+  <body id="wordle-intro">
+    <div class="transition-screen"></div>
+
+    <div class="bubble-container">
+      <img id="bubble" src="./assets/speech_bubble.png" />
+      <p id="intro">
+        <span>Wuff!</span> I'm Swimmy, the swimming doggy. I've never seen a human so beautiful before! <span>Wuff!</span> All this swimming is making me hungry. Please feed me treats! <span>Wuff!</span>
+        To do so, you'll need to solve Wordles. If you give me enough treats, I'll be a super happy doggy. <span>Wuff!</span> Will you help me?
+      </p>
+      <p id="start">
+        Yay! <span>Wuff!</span> Wow, you're gorgeous *and* kind! I bet you're also super smart -- I'm about to get lots of treats!! <span>Wuff!</span>
+        <br /><br />I assume you already know how to play, so let's go! <span>Wuff!</span>
+      </p>
+    </div>
+
+    <img id="doggy" src="./assets/doggy.gif" />
+
+    <button id="yes" onclick="acceptChallenge()">Yes!</button>
+    <button id="no" onclick="randomizeLocation()">No.</button>
+    <button id="letsgo" onclick="transitionToPage('./wordle.html')">Let's go!</button>
+
+    <script src="./main.js"></script>
+    <script>
+        introWordle();
+    </script>
+  </body>
+</html>
