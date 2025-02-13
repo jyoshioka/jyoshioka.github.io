@@ -79,8 +79,7 @@ function acceptChallenge() {
     document.getElementById('start').style.animation = 'fadeIn 0.5s linear forwards 0.5s';
 }
 
-// const words = ['adore', 'smile', 'laugh', 'flirt', 'blush', 'proud', 'cheri', 'sweet']; 
-const words = ['adore']; //  'laugh', 'smile'
+const words = ['adore', 'laugh', 'blush', 'sweet', 'cheri'];
 let attempt = 1;
 const maxAttempts = 6;
 const maxCharacters = 5;
@@ -709,7 +708,7 @@ function endGame() {
         const moveDuration = 3000; // body#final-wordle div.grid div.row, transition duration
         setTimeout(() => {
             // make heart appear
-            document.getElementById('heart').style.animation = 'fadeIn 1s linear forwards';
+            document.getElementById('heart').style.animation = 'fadeIn 1s linear forwards, bounce 1.5s ease alternate infinite';
         }, moveDuration - 500);
 
         // move dog
